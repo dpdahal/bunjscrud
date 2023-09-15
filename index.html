@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-3 mb-3">
+                <h1>BunJS CRUD </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <form action="" id="myForm">
+                    <input type="hidden" id="criteria">
+                    <div class="form-group mb-2">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required class="form-control">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required class="form-control">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" required maxlength="20" class="form-control">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="phone">Phone</label>
+                        <input type="number" id="phone" required class="form-control">
+                    </div>
+                    <div class="form-group mb-2">
+                        <button id="addRecord" class="btn btn-success">Add Record</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>S.n</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users_list"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
